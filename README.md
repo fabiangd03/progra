@@ -1,2 +1,2 @@
-# progra
+# fundamentos
 avance de clase fundamentos de programacion
