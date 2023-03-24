@@ -1,0 +1,59 @@
+#include <iostream>
+
+using namespace std;
+// Autor Fabian Garcia
+
+int main()
+{
+    int opcion;
+    cout<<"MENU"<<endl;
+    cout<<"1. Calcular el precio a pagar: "<<endl;
+    cout<<"2. Calcular presupuesto" <<endl;
+    cout<<"3. Calcular la solucion unica"<<endl;
+    cout<<"Ingrese la opcion: ";
+    cin>>opcion;
+    if (opcion == 1)
+    {
+        int cantidad;
+        float precio, Total;
+        cout<<"Ingrese la cantidad: ";
+        cin>>cantidad;
+        cout<<"Ingrese el precio: ";
+        cin>>precio;
+        if (cantidad>=3)
+            Total = (cantidad*precio)*0.8;
+        else
+            Total = (cantidad*precio)*0.9;
+        cout<<"El total a pagar es: "<<Total;
+    return 0;
+    }
+    if (opcion == 2)
+    {
+        int p,G,T,P;
+        cout<<"Ingrese el presupuesto anual: ";
+        cin>>p;
+        G=p*0.4;
+        T=p*0.3;
+        P=p*0.3;
+        cout<<("El presupuesto de Ginecologia es: ")<<G<<("; Traumatologia: ")<<T<<(" y Pediatria: ")<<P<<endl;
+    }
+    if (opcion == 3)
+    {
+        float a,b,c,d,x;
+        cout<<"Ingrese a: ";
+        cin>>a;
+        cout<<"Ingrese b: ";
+        cin>>b;
+        cout<<"Ingrese c: ";
+        cin>>c;
+        d=((b*b)-4*a*c);
+        if (d==0) {
+            x= -b/(4*a);
+            cout<<("x: ")<<x<<endl;
+        } else
+        cout<<("La solucion no es unica")<<endl;
+    }
+    
+    return 0;
+    
+}
