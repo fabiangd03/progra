@@ -1,0 +1,22 @@
+
+using namespace std;
+// Autor Fabian Garcia
+
+int main()
+{
+    float a,b,c,d,x;
+    cout<<"Ingrese a: ";
+    cin>>a;
+    cout<<"Ingrese b: ";
+    cin>>b;
+    cout<<"Ingrese c: ";
+    cin>>c;
+    d=((b*b)-4*a*c);
+    if (d==0) {
+        x= -b/(4*a);
+        cout<<("x: ")<<x<<endl;
+    } else
+        cout<<("La solucion no es unica")<<endl;
+    
+    return 0;
+}
